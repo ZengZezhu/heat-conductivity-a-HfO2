@@ -1,1 +1,1 @@
-# heat-conductivity-a-HfO2
+# heat-conductivity-amorphous-HfO2
