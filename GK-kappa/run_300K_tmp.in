@@ -1,0 +1,14 @@
+potential  nep.txt 
+velocity   300
+
+ensemble    nvt_nhc 300 300 100
+time_step   1
+dump_thermo 1000
+run         200000
+
+ensemble    nve
+run         200000
+
+ensemble    nve
+compute     0 1 10 jp jk  # jp and jk are heat current of potential and kinitic terms, respectively.
+run         200000
