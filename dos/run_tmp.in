@@ -1,0 +1,12 @@
+potential   nep.txt
+velocity    TTTTT
+
+ensemble    npt_scr TTTTT TTTTT 100 0 200 1000
+time_step   1
+dump_thermo 1000
+run         100000
+
+
+ensemble    nve
+compute_dos 10 500 200.0 group 0 0 num_dos_points 2000
+run         500000
