@@ -1,0 +1,13 @@
+type          2 O Hf
+cutoff        8 5 
+n_max         6 6
+basis_size    8 8 
+l_max         4 2 0 
+neuron        40 
+lambda_e      1.0 
+lambda_f      1.0
+lambda_v      0.1
+population    50  
+batch        5000
+zbl          1.5
+generation   200000
