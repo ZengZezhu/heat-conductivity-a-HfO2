@@ -1,0 +1,22 @@
+potential  nep.txt
+time_step       1
+
+velocity     4000
+
+ensemble    npt_scr 4000 4000 100 0 200 1000
+time_step   1
+dump_thermo 2000
+dump_exyz   10000 0 1
+run         500000
+
+ensemble    npt_scr 4000 300 100 0 200 1000
+time_step   1
+dump_thermo 50000
+dump_exyz   1000000 0 1
+run	    37000000
+
+ensemble    npt_scr 300 300 100 0 200 1000
+time_step   1
+dump_thermo 1000
+dump_exyz   20000 0 1
+run         1000000
